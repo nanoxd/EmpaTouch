@@ -19,6 +19,16 @@
 {
     [super viewDidLoad];
 	self.view.backgroundColor = [UIColor colorWithRed:0.42 green:0.71 blue:0.89 alpha:1.0];
+    
+    UIButton *firstButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    firstButton.frame = CGRectMake(100, 100, 100, 44);
+    
+    [firstButton setTitle:@"Click this" forState:UIControlStateNormal];
+    [self.view addSubview:firstButton];
+    
+    UILabel *firstLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 30, 200, 44)];
+    firstLabel.text = @"Welcome to my app!";
+    [self.view addSubview:firstLabel];
 }
 
 - (void)loadView
